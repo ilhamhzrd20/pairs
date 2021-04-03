@@ -1,24 +1,28 @@
-<header class="font-display sticky top-0 right-0 bg-white px-20 py-6 flex justify-between items-center text-sm ">
+<header class="font-display lg:sticky top-0 right-0 bg-white px-6 lg:px-20 py-6 flex flex-col lg:flex-row justify-between items-center text-sm ">
   <div>
     <a href="https://www.pairs.lv/">
       <img src="/assets/logo_pairs.png" alt="Pairs Logo" class="h-7">
     </a>
   </div>
-  <div>
-    <a href="https://www.pairs.lv/happy/" class="mr-10 hover:text-pairs">幸せレポート</a>
-    <a href="https://www.pairs.lv/pairs_column/" class="mr-10 hover:text-pairs">Pairsコラム</a>
-    <a href="https://www.pairs.lv/price/" class="mr-10 hover:text-pairs">料金</a>
-    <a href="https://www.pairs.lv/category/pairs_news/" class="mr-10 hover:text-pairs">Pairsニュース</a>
-    <button class="mr-2 px-3 py-2 rounded-full border border-blue-900 hover:bg-blue-900 text-blue-900 hover:text-white">Facebookでログイン</button>
-    <button class="mr-2 px-3 py-2 rounded-full border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white">メールアドレスでログイン</button>
-  </div>
+  <div class="flex lg:flex-row flex-col items-center">
+    <div class="text-center mt-4 lg:mt-0">
+      <a href="https://www.pairs.lv/happy/" class="lg:mr-10 mr-6 hover:text-pairs">幸せレポート</a>
+      <a href="https://www.pairs.lv/pairs_column/" class="lg:mr-10 mr-6 hover:text-pairs">Pairsコラム</a>
+      <a href="https://www.pairs.lv/price/" class="lg:mr-10 mr-6 hover:text-pairs">料金</a>
+      <a href="https://www.pairs.lv/category/pairs_news/" class="lg:mr-10 hover:text-pairs">Pairsニュース</a>  
+    </div>
+    <div class="mt-4 lg:mt-0">
+      <button class="mr-2 px-3 py-2 rounded-full border border-blue-900 hover:bg-blue-900 text-blue-900 hover:text-white">Facebookでログイン</button>
+      <button class="px-3 py-2 rounded-full border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white">メールアドレスでログイン</button>
+    </div>
+    </div>
 </header>
 
-<section class="font-display px-20">
+<section class="lg:font-display lg:px-20 hidden lg:grid">
   <div class="grid grid-cols-4 grid-rows-2 gap-14">
     <div class="flex flex-col py-10 items-center justify-center space-y-4">
       <img src="/assets/lovers_per_month.png" alt="" class="">
-      <img src="/assets/No1.png" alt="" class="">
+      <img src="/assets/No1.png" alt="" class="h-full">
     </div>
     <div class="col-span-3 row-span-2">
       <img src="/assets/MV.jpg" alt="MV" class="h-full">
@@ -51,42 +55,79 @@
   </div>
 </section>
 
-<section class="font-display px-40 py-20">
+<section class="font-display lg:hidden">
+  <div class="flex flex-col">
+    <div class="">
+      <img src="/assets/MV.jpg" alt="MV" class="w-full">
+    </div>
+    <div class="flex flex-col py-10 items-center justify-center space-y-4">
+      <img src="/assets/lovers_per_month.png" alt="" class="">
+      <img src="/assets/No1.png" alt="" class="h-full">
+    </div>
+    <div class="h-full flex flex-col items-center justify-center space-y-6">
+      <p class="text-xl font-semibold text-gray-700">今すぐかんたん無料登録！ </p>
+      <p class="text-xs text-gray-500 text-center">18歳以上なので、 利用規約および<br>プライバシーポリシーに同意して </p>
+      <button class="rounded-full px-6 py-3 bg-gradient-to-tr from-blue-900 to-blue-500 text-white text-lg font-semibold">
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex flex-row items-center justify-center">
+            <i class="fab fa-facebook-f mr-2"></i>
+            <p>Facebookではじめる</p>
+          </div>
+          <p class="text-xs font-normal">Facebookには一切投稿されません</p>
+        </div>
+      </button>
+      <div class="flex flex-row space-x-3">
+        <a href="https://itunes.apple.com/jp/app/id583376064?l=ja&mt=8">
+          <img src="/assets/apple.png" alt="" class="h-8">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=jp.eure.android.pairs&hl=ja">
+          <img src="/assets/google.png" alt="" class="h-8">
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 px-6">
+      <p class="text-xs text-center font-light text-gray-400">※1 MMD研究所xスマートアンサー「2019年マッチングサービス・アプリの利用実態調査」より</p>
+      <p class="text-xs text-center font-light text-gray-400">※2 自社調べ。Pairs退会者アンケート結果。2020年 8-10月時点。 ※18歳未満の方や独身でない方はご登録いただけません</p>
+    </div>
+  </div>
+</section>
+
+<section class="font-display lg:px-40 px-10 py-20">
   <p class="text-3xl font-semibold text-gray-600">Pairsでは平均4ヶ月で</p>
   <p class="text-3xl font-semibold text-gray-600">恋人ができています</p>
-  <div class="mt-10 grid grid-cols-3 gap-8">
+  <div class="mt-10 grid lg:grid-cols-3 lg:grid-rows-none grid-rows-3 gap-8">
     <div>
-      <img src="/assets/a1.png" alt="" class="h-52 rounded-md">
+      <img src="/assets/a1.png" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-red-700">ご交際</p>
       <p class="mt-1 text-gray-700 text-lg font-semibold">忘れかけていた頃にPairsで再会して付き合えることに</p>
       <p class="mt-2 text-gray-400 text-sm">2018年7月11月 Yさん 24歳 長崎 (女性)</p>
     </div>
     <div>
-      <img src="/assets/a2.png" alt="" class="h-52 rounded-md">
+      <img src="/assets/a2.png" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-red-700">ご交際</p>
       <p class="mt-1 text-gray-700 text-lg font-semibold">彼と偶然出会うことができて、続けてきて本当に良かった</p>
       <p class="mt-2 text-gray-400 text-sm">2017年10月16月 Yさん 26歳 大阪 (女性)</p>
     </div>
     <div>
-      <img src="/assets/a3.png" alt="" class="h-52 rounded-md">
+      <img src="/assets/a3.png" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-blue-700">ご結婚</p>
       <p class="mt-1 text-gray-700 text-lg font-semibold">大好きな人と一緒に生活できる今、人生で一番幸せで楽しいです</p>
       <p class="mt-2 text-gray-400 text-sm">2018年10月4月 Sさん 27歳 佐賀 (女性)</p>
     </div>
     <div>
-      <img src="/assets/a4.jpg" alt="" class="h-52 rounded-md">
+      <img src="/assets/a4.jpg" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-green-700">カップルライフ</p>
       <p class="mt-1 text-gray-700 text-lg font-semibold">「富山から東京の彼を見つけました」筋トレ好きな妻と勉強家な夫の新婚生活</p>
       <p class="mt-2 text-gray-400 text-sm">2019年6月19月 26歳女性 東京</p>
     </div>
     <div>
-      <img src="/assets/a5.jpg" alt="" class="h-52 rounded-md">
+      <img src="/assets/a5.jpg" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-red-700">ご交際</p>
       <p class="mt-1 text-gray-700 text-lg font-semibold">会ってすぐに、僕が「一目惚れ」</p>
       <p class="mt-2 text-gray-400 text-sm">2014年9月29月 Wさん 31歳 大阪 (女性)</p>
     </div>
     <div>
-      <img src="/assets/a6.jpg" alt="" class="h-52 w-full rounded-md">
+      <img src="/assets/a6.jpg" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-green-700">カップルライフ</p>
       <p class="mt-1 text-gray-700 text-lg font-semibold">「胃袋をわしづかみされてます！」料理上手な妻と、妻の料理が大好きな夫</p>
       <p class="mt-2 text-gray-400 text-sm">2020年3月24月 25歳女性 神奈川</p>
@@ -97,10 +138,10 @@
   </div>
 </section>
 
-<section class="font-display py-20 px-40">
+<section class="font-display py-20 lg:px-40 px-10">
   <p class="text-3xl font-semibold text-gray-600">Pairsの簡単ステップ</p>
   <p class="mt-2 text-gray-400">Pairsの使い方は簡単。マッチングまでのステップをご紹介します。</p>
-  <div class="grid grid-cols-3 gap-6 mt-8">
+  <div class="grid lg:grid-cols-3 lg:grid-rows-none grid-rows-3 gap-6 mt-8">
     <div class="flex flex-col justify-center items-center">
       <img src="/assets/img_step1.png" alt="">
       <p class="text-center text-lg font-semibold text-pairs">まずは理想のお相手を探します。</p>
@@ -120,26 +161,26 @@
   </div>
 </section>
 
-<section class="font-display py-20 px-40">
+<section class="font-display py-20 lg:px-40 px-10">
   <p class="text-3xl font-semibold text-gray-600">Pairsが選ばれている理由</p>
   <p class="mt-2 text-gray-400">累計会員数1,000万人※突破のPairs。お客様に選ばれ、多くのマッチングを生み出した理由。</p>
   <p class="mt-1 text-xs text-gray-400">※ 2012年10月〜2019年1月までの累計会員数です(当社調べ)</p>
-  <div class="mt-10 flex flex-row space-x-8 items-center">
+  <div class="mt-10 flex lg:flex-row flex-col space-x-8 items-center">
     <img src="/assets/img_select1.png" alt="">
     <div>
       <p class="text-2xl text-pairs font-semibold">豊富な検索機能で、<br>理想のお相手を探しやすい。</p>
       <p class="text-gray-700 mt-4">年齢、居住地、身長、職業など基本的なステータスから、結婚への意思、お酒、タバコといった項目まで、細かく検索項目を設定できるので、理想のお相手が見つかります。</p>
     </div>
   </div>
-  <div class="mt-4 flex flex-row space-x-8 items-center">
+  <div class="mt-4 flex lg:flex-row flex-col space-x-8 items-center">
+    <img src="/assets/img_select2.png" alt="">
     <div>
       <p class="text-2xl text-pairs font-semibold">コミュニティ機能で<br>共通の趣味や興味でつながる！</p>
       <p class="text-gray-700 mt-4">Pairsには、現在約100,000のコミュニティが存在しています。「イタリア料理好き」「海外旅行が好き」や、「趣味はカフェ巡り」「お米は固いのが好き」などの、自分の趣味や、好きなものをアピールするために利用されています。
         コミュニティ機能なら、あなたとピッタリの価値観を持つお相手かどうかが、ひと目でわかります。</p>
     </div>
-    <img src="/assets/img_select2.png" alt="">
   </div>
-  <div class="mt-10 flex flex-row space-x-8 items-center">
+  <div class="mt-10 flex lg:flex-row flex-col space-x-8 items-center">
     <img src="/assets/img_select3.png" alt="">
     <div>
       <p class="text-2xl text-pairs font-semibold">毎日約8,000人がPairsに<br>登録しています！</p>
@@ -149,12 +190,12 @@
 </section>
 
 <section class="bg-bg-section bg-cover font-display">
-  <div class="grid grid-cols-2 gap-6 px-40 py-10">
+  <div class="grid lg:grid-cols-2 lg:grid-rows-none grid-rows-2 gap-6 lg:px-40 px-10 py-10">
     <div>
       <img src="/assets/cv.png" alt="">
     </div>
     <div class="flex flex-col items-center justify-center space-y-10">
-      <p class="text-3xl font-semibold text-white">今すぐPairsへかんたん無料登録！</p>
+      <p class="text-3xl font-semibold text-white text-center lg:text-left">今すぐPairsへかんたん無料登録！</p>
       <p class="text-sm text-white text-center">18歳以上なので、 利用規約およびプライバシーポリシーに同意して </p>
       <button class="rounded-full px-8 py-4 bg-gradient-to-tr from-blue-900 to-blue-500 text-white text-lg font-semibold">
         <div class="flex flex-col items-center justify-center">
@@ -177,7 +218,7 @@
   </div>
 </section>
 
-<section class="font-display px-40 py-20">
+<section class="font-display lg:px-40 px-10 py-20">
   <p class="text-3xl font-semibold text-gray-600">安心・安全の理由</p>
   <p class="mt-2 text-gray-400">お客様に安心・安全にご利用いただくために、Pairsは様々な仕組みを持っています。</p>
   <div class="grid grid-cols-2 mt-14">
@@ -196,10 +237,10 @@
   </div>
 </section>
 
-<section class="font-display bg-bg-section2 bg-cover px-40 py-10">
-  <div class="grid grid-cols-3 gap-8">
+<section class="font-display bg-bg-section2 bg-cover lg:px-40 px-10 py-10">
+  <div class="lg:grid lg:grid-cols-3 flex flex-col items-center justify-center gap-8">
     <div class="col-span-2 flex justify-start items-center">
-      <p class="text-4xl font-semibold text-gray-700">Pairsは数々のメディアで<br>紹介されています </p>
+      <p class="text-4xl font-semibold text-gray-700 lg:text-left text-center">Pairsは数々のメディアで<br>紹介されています </p>
     </div>
     <div>
       <img src="/assets/magazines.png" alt="">
@@ -207,10 +248,10 @@
   </div>
 </section>
 
-<section class="font-display px-40 py-20">
+<section class="font-display lg:px-40 px-10 py-20">
   <p class="text-3xl font-semibold text-gray-600">Pairsコラム</p>
   <p class="mt-2 text-gray-400">Pairsチーム監修恋愛コンテンツ。Pairsでパートナーが見つかる秘訣も大公開。</p>
-  <div class="grid grid-cols-2 grid-rows-3 gap-6 mt-10">
+  <div class="grid lg:grid-cols-2 lg:grid-rows-3 flex-col gap-6 mt-10">
     <div class="row-span-2">
       <img src="/assets/news1.png" alt="" class="w-full">
       <p class="mt-4 text-lg font-semibold text-gray-700">CM＆出演俳優紹介！マイペースに、マイペアーズ。</p>
@@ -270,8 +311,8 @@
   </div>
 </section>
 
-<section class="px-40 py-20">
-  <div class="grid grid-cols-2 gap-6">
+<section class="lg:px-40 px-10 py-20">
+  <div class="lg:grid lg:grid-cols-2 flex flex-col gap-6">
     <div class="col-span-2">
       <img src="/assets/logo_pairs.png" alt="" class="h-10">
     </div>
@@ -279,7 +320,7 @@
       <img src="/assets/cv.png" alt="">
     </div>
     <div class="flex flex-col items-center justify-center space-y-10">
-      <p class="text-3xl font-semibold text-gray-700">今すぐPairsへかんたん無料登録！</p>
+      <p class="text-3xl font-semibold text-gray-700 lg:text-left text-center">今すぐPairsへかんたん無料登録！</p>
       <p class="text-sm text-gray-500 text-center">18歳以上なので、 利用規約およびプライバシーポリシーに同意して </p>
       <button class="rounded-full px-8 py-4 bg-gradient-to-tr from-blue-900 to-blue-500 text-white text-lg font-semibold">
         <div class="flex flex-col items-center justify-center">
@@ -302,25 +343,25 @@
   </div>
 </section>
 
-<section class="px-40 py-6">
-  <div class="flex justify-between items-center">
+<section class="lg:px-40 px-10 py-6">
+  <div class="flex flex-col lg:flex-row justify-between items-center">
     <div>
       <a href="https://www.instagram.com/pairs.lv/?hl=ja" class="fab fa-instagram rounded-full text-2xl py-2 px-3 bg-gray-400 text-white"></a>
       <a href="https://twitter.com/pairs_official" class="fab fa-twitter rounded-full text-2xl py-2 px-3 bg-gray-400 text-white ml-2"></a>
       <a href="https://www.youtube.com/channel/UCxKh5P4jMdxq5A7orVHdajw" class="fab fa-youtube rounded-full text-2xl py-2 px-3 bg-gray-400 text-white ml-2"></a>
       <a href="https://www.facebook.com/pairs.lv/" class="fab fa-facebook-f rounded-full text-2xl py-2 px-4 bg-gray-400 text-white ml-2"></a>
     </div>
-    <div>
-      <p class="text-right text-xs text-gray-500">18歳以上の方・独身の方向けのサービスです。</p>
-      <p class="text-right text-xs text-gray-500">Apple、Appleのロゴ、iPhoneは、米国もしくはその他の国や地域におけるApple Inc.の商標です。</p>
-      <p class="text-right text-xs text-gray-500">App Storeは、Apple Inc.のサービスマークです。</p>
-      <p class="text-right text-xs text-gray-500">Google Play および Google Play ロゴは、Google LLC の商標です。</p>
+    <div class="lg:mt-0 mt-4">
+      <p class="lg:text-right text-center text-xs text-gray-500">18歳以上の方・独身の方向けのサービスです。</p>
+      <p class="lg:text-right text-center text-xs text-gray-500">Apple、Appleのロゴ、iPhoneは、米国もしくはその他の国や地域におけるApple Inc.の商標です。</p>
+      <p class="lg:text-right text-center text-xs text-gray-500">App Storeは、Apple Inc.のサービスマークです。</p>
+      <p class="lg:text-right text-center text-xs text-gray-500">Google Play および Google Play ロゴは、Google LLC の商標です。</p>
     </div>
   </div>
 </section>
 
-<footer class="bg-gray-100 border-t border-gray-200 px-40 py-10">
-  <div class="grid grid-cols-2">
+<footer class="bg-gray-100 border-t border-gray-200 lg:px-40 px-10 py-10">
+  <div class="grid lg:grid-cols-2 grid-rows-2">
     <div>
       <a href="https://eure.jp/about/" class="text-xs">会社概要</a><span class="mx-2 text-gray-500">|</span>
       <a href="https://pairs.lv/?utm_jump=/s/termsofservice_view#/static/termsofservice" class="text-xs">利用規約</a><span class="mx-2 text-gray-500">|</span>
@@ -332,7 +373,7 @@
       <a href="https://www.pairs.lv/wp-content/themes/pairs_pc/alliance" class="text-xs">記事提供元一覧</a>
     </div>
   </div>
-  <div class="mt-6 flex flex-row">
+  <div class="lg:mt-6 flex flex-row">
     <a href="https://pairs.lv/?utm_jump=/static/privacy#/static/privacy">
       <img src="/assets/truste_ja.png" alt="" class="h-14">
     </a>
