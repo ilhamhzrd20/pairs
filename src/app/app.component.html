@@ -1,21 +1,36 @@
-<header class="font-display lg:sticky top-0 right-0 bg-white px-6 lg:px-20 py-6 flex flex-col lg:flex-row justify-between items-center text-sm ">
-  <div>
-    <a href="https://www.pairs.lv/">
-      <img src="/assets/logo_pairs.png" alt="Pairs Logo" class="h-7">
-    </a>
+<header class="font-display sticky top-0 right-0 bg-white px-6 lg:px-20 py-6 text-sm ">
+  <div class="flex lg:flex-row justify-between items-center">
+    <div>
+      <a href="https://www.pairs.lv/">
+        <img src="/assets/logo_pairs.png" alt="Pairs Logo" class="h-7">
+      </a>
+    </div>
+    <div class="hidden lg:flex lg:flex-row flex-col items-center">
+      <div class="text-center mt-4 lg:mt-0">
+        <a href="https://www.pairs.lv/happy/" class="lg:mr-10 mr-6 hover:text-pairs">幸せレポート</a>
+        <a href="https://www.pairs.lv/pairs_column/" class="lg:mr-10 mr-6 hover:text-pairs">Pairsコラム</a>
+        <a href="https://www.pairs.lv/price/" class="lg:mr-10 mr-6 hover:text-pairs">料金</a>
+        <a href="https://www.pairs.lv/category/pairs_news/" class="lg:mr-10 hover:text-pairs">Pairsニュース</a>  
+      </div>
+      <div class="mt-4 lg:mt-0">
+        <button class="mr-2 px-3 py-2 rounded-full border border-blue-900 hover:bg-blue-900 text-blue-900 hover:text-white">Facebookでログイン</button>
+        <button class="px-3 py-2 rounded-full border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white">メールアドレスでログイン</button>
+      </div>
+    </div>
+    <button class="lg:hidden" (click)="isOpen ? isOpen = false : isOpen = true">
+      <i class="fas fa-bars text-gray-700 text-lg"></i>
+    </button>
   </div>
-  <div class="flex lg:flex-row flex-col items-center">
-    <div class="text-center mt-4 lg:mt-0">
-      <a href="https://www.pairs.lv/happy/" class="lg:mr-10 mr-6 hover:text-pairs">幸せレポート</a>
-      <a href="https://www.pairs.lv/pairs_column/" class="lg:mr-10 mr-6 hover:text-pairs">Pairsコラム</a>
-      <a href="https://www.pairs.lv/price/" class="lg:mr-10 mr-6 hover:text-pairs">料金</a>
-      <a href="https://www.pairs.lv/category/pairs_news/" class="lg:mr-10 hover:text-pairs">Pairsニュース</a>  
+  <section *ngIf="isOpen == true" class="sticky mt-6 py-4">
+    <div class="h-auto bg-white flex flex-col space-y-8 items-center justify-center">
+        <a href="https://www.pairs.lv/happy/" class="lg:mr-10 hover:text-pairs">幸せレポート</a>
+        <a href="https://www.pairs.lv/pairs_column/" class="lg:mr-10 hover:text-pairs">Pairsコラム</a>
+        <a href="https://www.pairs.lv/price/" class="lg:mr-10 hover:text-pairs">料金</a>
+        <a href="https://www.pairs.lv/category/pairs_news/" class="lg:mr-10 hover:text-pairs">Pairsニュース</a>
+        <button class="px-3 py-2 rounded-full bg-blue-900 text-white">Facebookでログイン</button>
+        <button class="px-3 py-2 rounded-full bg-blue-500 text-white">メールアドレスでログイン</button>
     </div>
-    <div class="mt-4 lg:mt-0">
-      <button class="mr-2 px-3 py-2 rounded-full border border-blue-900 hover:bg-blue-900 text-blue-900 hover:text-white">Facebookでログイン</button>
-      <button class="px-3 py-2 rounded-full border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white">メールアドレスでログイン</button>
-    </div>
-    </div>
+  </section>
 </header>
 
 <section class="lg:font-display lg:px-20 hidden lg:grid">
@@ -99,42 +114,42 @@
     <div>
       <img src="/assets/a1.png" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-red-700">ご交際</p>
-      <p class="mt-1 text-gray-700 text-lg font-semibold">忘れかけていた頃にPairsで再会して付き合えることに</p>
+      <a href="" class="hover:text-blue-500 mt-1 text-gray-700 text-lg font-semibold">忘れかけていた頃にPairsで再会して付き合えることに</a>
       <p class="mt-2 text-gray-400 text-sm">2018年7月11月 Yさん 24歳 長崎 (女性)</p>
     </div>
     <div>
       <img src="/assets/a2.png" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-red-700">ご交際</p>
-      <p class="mt-1 text-gray-700 text-lg font-semibold">彼と偶然出会うことができて、続けてきて本当に良かった</p>
+      <a href="" class="hover:text-blue-500 mt-1 text-gray-700 text-lg font-semibold">彼と偶然出会うことができて、続けてきて本当に良かった</a>
       <p class="mt-2 text-gray-400 text-sm">2017年10月16月 Yさん 26歳 大阪 (女性)</p>
     </div>
     <div>
       <img src="/assets/a3.png" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-blue-700">ご結婚</p>
-      <p class="mt-1 text-gray-700 text-lg font-semibold">大好きな人と一緒に生活できる今、人生で一番幸せで楽しいです</p>
+      <a href="" class="hover:text-blue-500 mt-1 text-gray-700 text-lg font-semibold">大好きな人と一緒に生活できる今、人生で一番幸せで楽しいです</a>
       <p class="mt-2 text-gray-400 text-sm">2018年10月4月 Sさん 27歳 佐賀 (女性)</p>
     </div>
     <div>
       <img src="/assets/a4.jpg" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-green-700">カップルライフ</p>
-      <p class="mt-1 text-gray-700 text-lg font-semibold">「富山から東京の彼を見つけました」筋トレ好きな妻と勉強家な夫の新婚生活</p>
+      <a href="" class="hover:text-blue-500 mt-1 text-gray-700 text-lg font-semibold">「富山から東京の彼を見つけました」筋トレ好きな妻と勉強家な夫の新婚生活</a>
       <p class="mt-2 text-gray-400 text-sm">2019年6月19月 26歳女性 東京</p>
     </div>
     <div>
       <img src="/assets/a5.jpg" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-red-700">ご交際</p>
-      <p class="mt-1 text-gray-700 text-lg font-semibold">会ってすぐに、僕が「一目惚れ」</p>
+      <a href="" class="hover:text-blue-500 mt-1 text-gray-700 text-lg font-semibold">会ってすぐに、僕が「一目惚れ」</a>
       <p class="mt-2 text-gray-400 text-sm">2014年9月29月 Wさん 31歳 大阪 (女性)</p>
     </div>
     <div>
       <img src="/assets/a6.jpg" alt="" class="w-full rounded-md">
       <p class="mt-4 text-xs text-green-700">カップルライフ</p>
-      <p class="mt-1 text-gray-700 text-lg font-semibold">「胃袋をわしづかみされてます！」料理上手な妻と、妻の料理が大好きな夫</p>
+      <a href="" class="hover:text-blue-500 mt-1 text-gray-700 text-lg font-semibold">「胃袋をわしづかみされてます！」料理上手な妻と、妻の料理が大好きな夫</a>
       <p class="mt-2 text-gray-400 text-sm">2020年3月24月 25歳女性 神奈川</p>
     </div>
   </div>
   <div class="flex justify-center items-center mt-10">
-    <a href="https://www.pairs.lv/happy/status/all/" class="text-center font-semibold text-gray-700 text-lg">すべてのレポートを見る<i class="ml-4 fas fa-chevron-right"></i></a>
+    <a href="https://www.pairs.lv/happy/status/all/" class="text-center font-semibold text-gray-700 text-lg hover:text-gray-500">すべてのレポートを見る<i class="ml-4 fas fa-chevron-right"></i></a>
   </div>
 </section>
 
@@ -254,17 +269,17 @@
   <div class="grid lg:grid-cols-2 lg:grid-rows-3 flex-col gap-6 mt-10">
     <div class="row-span-2">
       <img src="/assets/news1.png" alt="" class="w-full">
-      <p class="mt-4 text-lg font-semibold text-gray-700">CM＆出演俳優紹介！マイペースに、マイペアーズ。</p>
+      <a href="" class="hover:underline lg:mt-4 mt-6 text-lg font-semibold text-gray-700">CM＆出演俳優紹介！マイペースに、マイペアーズ。</a>
       <p class="mt-2 text-sm">今回登場するのは、それぞれ違った恋のペースを持つ6 人の男女。男子会、女子会で語られる恋バナはどこか聞き覚えのある会話ではないでしょうか。今回そんな等身大の男女を...</p>
       <div class="mt-2 flex justify-between">
         <p class="text-xs">2020/12/21</p>
         <p class="text-xs">Pairsニュース</p>
       </div>
     </div>
-    <div class="flex flex-row justify-center">
-      <img src="/assets/news2.png" alt="" class="h-32">
-      <div class="ml-6">
-        <p class="text-lg font-semibold text-gray-700">あなたのペースで恋できる。マイペースに、マイペアーズ。</p>
+    <div class="flex lg:flex-row flex-col justify-center">
+      <img src="/assets/news2.png" alt="" class="h-32 object-cover">
+      <div class="lg:ml-6">
+        <a href="" class="hover:underline text-lg font-semibold text-gray-700">あなたのペースで恋できる。マイペースに、マイペアーズ。</a>
         <p class="mt-2 text-sm">恋のペースなんて、人それぞれ。じっと待つ人もいれば、どんどん探しにいく人もいるし、ゆっく...</p>
         <div class="mt-2 flex justify-between">
           <p class="text-xs">2020/12/21</p>
@@ -272,10 +287,10 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-center">
-      <img src="/assets/news3.png" alt="" class="h-32">
-      <div class="ml-6">
-        <p class="text-lg font-semibold text-gray-700">Twitter × Pairs、総額100万円分のクリスマスプレゼント！フォロー&リツイートで、あな...</p>
+    <div class="flex lg:flex-row flex-col justify-center">
+      <img src="/assets/news3.png" alt="" class="h-32 object-cover">
+      <div class="lg:ml-6">
+        <a href="" class="hover:underline text-lg font-semibold text-gray-700">Twitter × Pairs、総額100万円分のクリスマスプレゼント！フォロー&リツイートで、あな...</a>
         <p class="mt-2 text-sm">2020年12月11日より、「Twitterクリスマスボックスキャンペーン2020」にPairsが参加します。本キ...</p>
         <div class="mt-2 flex justify-between">
           <p class="text-xs">2020/12/03</p>
@@ -283,10 +298,10 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-center">
-      <img src="/assets/news4.jpg" alt="" class="h-32">
-      <div class="ml-6">
-        <p class="text-lg font-semibold text-gray-700">【解説記事】『コミュニティにいいね！』機能を使ってみよう！</p>
+    <div class="flex lg:flex-row flex-col justify-center">
+      <img src="/assets/news4.jpg" alt="" class="h-32 object-cover">
+      <div class="lg:ml-6">
+        <a href="" class="hover:underline text-lg font-semibold text-gray-700">【解説記事】『コミュニティにいいね！』機能を使ってみよう！</a>
         <p class="mt-2 text-sm">こんにちは、ペアーズ編集部です。ペアーズに新しく『コミュニティにいいね！』機能がリリースさ...</p>
         <div class="mt-2 flex justify-between">
           <p class="text-xs">2020/08/24</p>
@@ -294,10 +309,10 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-center">
-      <img src="/assets/news5.png" alt="" class="h-32">
-      <div class="ml-6">
-        <p class="text-lg font-semibold text-gray-700">イメージコンサルタント監修！ビデオデートマニュアル 「実践編」</p>
+    <div class="flex lg:flex-row flex-col justify-center">
+      <img src="/assets/news5.png" alt="" class="h-32 object-cover">
+      <div class="lg:ml-6">
+        <a href="" class="hover:underline text-lg font-semibold text-gray-700">イメージコンサルタント監修！ビデオデートマニュアル 「実践編」</a>
         <p class="mt-2 text-sm">こんにちは！ペアーズ編集部です。ペアーズの『ビデオデート』機能、もう使ってみましたか？...</p>
         <div class="mt-2 flex justify-between">
           <p class="text-xs">2020/07/09</p>
@@ -346,10 +361,10 @@
 <section class="lg:px-40 px-10 py-6">
   <div class="flex flex-col lg:flex-row justify-between items-center">
     <div>
-      <a href="https://www.instagram.com/pairs.lv/?hl=ja" class="fab fa-instagram rounded-full text-2xl py-2 px-3 bg-gray-400 text-white"></a>
-      <a href="https://twitter.com/pairs_official" class="fab fa-twitter rounded-full text-2xl py-2 px-3 bg-gray-400 text-white ml-2"></a>
-      <a href="https://www.youtube.com/channel/UCxKh5P4jMdxq5A7orVHdajw" class="fab fa-youtube rounded-full text-2xl py-2 px-3 bg-gray-400 text-white ml-2"></a>
-      <a href="https://www.facebook.com/pairs.lv/" class="fab fa-facebook-f rounded-full text-2xl py-2 px-4 bg-gray-400 text-white ml-2"></a>
+      <a href="https://www.instagram.com/pairs.lv/?hl=ja" class="fab fa-instagram rounded-full text-2xl py-2 px-3 bg-gray-400 hover:bg-gray-500 text-white"></a>
+      <a href="https://twitter.com/pairs_official" class="fab fa-twitter rounded-full text-2xl py-2 px-3 bg-gray-400 hover:bg-gray-500 text-white ml-2"></a>
+      <a href="https://www.youtube.com/channel/UCxKh5P4jMdxq5A7orVHdajw" class="fab fa-youtube rounded-full text-2xl py-2 px-3 bg-gray-400 hover:bg-gray-500 text-white ml-2"></a>
+      <a href="https://www.facebook.com/pairs.lv/" class="fab fa-facebook-f rounded-full text-2xl py-2 px-4 bg-gray-400 hover:bg-gray-500 text-white ml-2"></a>
     </div>
     <div class="lg:mt-0 mt-4">
       <p class="lg:text-right text-center text-xs text-gray-500">18歳以上の方・独身の方向けのサービスです。</p>
@@ -363,14 +378,14 @@
 <footer class="bg-gray-100 border-t border-gray-200 lg:px-40 px-10 py-10">
   <div class="grid lg:grid-cols-2 grid-rows-2">
     <div>
-      <a href="https://eure.jp/about/" class="text-xs">会社概要</a><span class="mx-2 text-gray-500">|</span>
-      <a href="https://pairs.lv/?utm_jump=/s/termsofservice_view#/static/termsofservice" class="text-xs">利用規約</a><span class="mx-2 text-gray-500">|</span>
-      <a href="https://pairs.lv/?utm_jump=/static/safety#/static/safety" class="text-xs">安心・安全の取り組みとガイド</a><span class="mx-2 text-gray-500">|</span>
-      <a href="https://pairs.lv/?utm_jump=/static/community_guideline#/static/community_guideline" class="text-xs">コミュニティガイドライン</a><span class="mx-2 text-gray-500">|</span>
-      <a href="https://pairs.lv/?utm_jump=/static/privacy#/static/privacy" class="text-xs">プライバシーポリシー</a><span class="mx-2 text-gray-500">|</span>
-      <a href="https://pairs.lv/?utm_jump=/static/deal#/static/deal" class="text-xs">特定商取引法に基づく表示</a><span class="mx-2 text-gray-500">|</span>
-      <a href="https://support.pairs.lv/hc/ja/" class="text-xs">ヘルプ</a><span class="mx-2 text-gray-500">|</span>
-      <a href="https://www.pairs.lv/wp-content/themes/pairs_pc/alliance" class="text-xs">記事提供元一覧</a>
+      <a href="https://eure.jp/about/" class="hover:text-gray-500 text-xs">会社概要</a><span class="mx-2 text-gray-500">|</span>
+      <a href="https://pairs.lv/?utm_jump=/s/termsofservice_view#/static/termsofservice" class="hover:text-gray-500 text-xs">利用規約</a><span class="mx-2 text-gray-500">|</span>
+      <a href="https://pairs.lv/?utm_jump=/static/safety#/static/safety" class="hover:text-gray-500 text-xs">安心・安全の取り組みとガイド</a><span class="mx-2 text-gray-500">|</span>
+      <a href="https://pairs.lv/?utm_jump=/static/community_guideline#/static/community_guideline" class="hover:text-gray-500 text-xs">コミュニティガイドライン</a><span class="mx-2 text-gray-500">|</span>
+      <a href="https://pairs.lv/?utm_jump=/static/privacy#/static/privacy" class="hover:text-gray-500 text-xs">プライバシーポリシー</a><span class="mx-2 text-gray-500">|</span>
+      <a href="https://pairs.lv/?utm_jump=/static/deal#/static/deal" class="hover:text-gray-500 text-xs">特定商取引法に基づく表示</a><span class="mx-2 text-gray-500">|</span>
+      <a href="https://support.pairs.lv/hc/ja/" class="hover:text-gray-500 text-xs">ヘルプ</a><span class="mx-2 text-gray-500">|</span>
+      <a href="https://www.pairs.lv/wp-content/themes/pairs_pc/alliance" class="hover:text-gray-500 text-xs">記事提供元一覧</a>
     </div>
   </div>
   <div class="lg:mt-6 flex flex-row">
