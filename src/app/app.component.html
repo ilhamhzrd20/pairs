@@ -22,13 +22,17 @@
     </button>
   </div>
   <section *ngIf="isOpen == true" class="sticky mt-6 py-4">
-    <div class="h-auto bg-white flex flex-col space-y-8 items-center justify-center">
-        <a href="https://www.pairs.lv/happy/" class="lg:mr-10 hover:text-pairs">幸せレポート</a>
-        <a href="https://www.pairs.lv/pairs_column/" class="lg:mr-10 hover:text-pairs">Pairsコラム</a>
-        <a href="https://www.pairs.lv/price/" class="lg:mr-10 hover:text-pairs">料金</a>
-        <a href="https://www.pairs.lv/category/pairs_news/" class="lg:mr-10 hover:text-pairs">Pairsニュース</a>
-        <button class="px-3 py-2 rounded-full bg-blue-900 text-white">Facebookでログイン</button>
-        <button class="px-3 py-2 rounded-full bg-blue-500 text-white">メールアドレスでログイン</button>
+    <div class="height-navbar bg-white flex flex-col items-center justify-between">
+        <div class="flex flex-col space-y-8 items-center">
+          <a href="https://www.pairs.lv/happy/" class="lg:mr-10 hover:text-pairs text-lg">幸せレポート</a>
+          <a href="https://www.pairs.lv/pairs_column/" class="lg:mr-10 hover:text-pairs text-lg">Pairsコラム</a>
+          <a href="https://www.pairs.lv/price/" class="lg:mr-10 hover:text-pairs text-lg">料金</a>
+          <a href="https://www.pairs.lv/category/pairs_news/" class="lg:mr-10 hover:text-pairs text-lg">Pairsニュース</a>
+        </div>
+        <div class="flex flex-col space-y-3 w-full">
+          <button class="w-full px-3 py-2 rounded-md bg-blue-900 text-white">Facebookでログイン</button>
+          <button class="w-full px-3 py-2 rounded-md bg-blue-500 text-white">メールアドレスでログイン</button>
+        </div>
     </div>
   </section>
 </header>
@@ -267,7 +271,7 @@
   <p class="text-3xl font-semibold text-gray-600">Pairsコラム</p>
   <p class="mt-2 text-gray-400">Pairsチーム監修恋愛コンテンツ。Pairsでパートナーが見つかる秘訣も大公開。</p>
   <div class="grid lg:grid-cols-2 lg:grid-rows-3 flex-col gap-6 mt-10">
-    <div class="row-span-2">
+    <div class="lg:row-span-2 flex flex-col">
       <img src="/assets/news1.png" alt="" class="w-full">
       <a href="" class="hover:underline lg:mt-4 mt-6 text-lg font-semibold text-gray-700">CM＆出演俳優紹介！マイペースに、マイペアーズ。</a>
       <p class="mt-2 text-sm">今回登場するのは、それぞれ違った恋のペースを持つ6 人の男女。男子会、女子会で語られる恋バナはどこか聞き覚えのある会話ではないでしょうか。今回そんな等身大の男女を...</p>
@@ -278,7 +282,7 @@
     </div>
     <div class="flex lg:flex-row flex-col justify-center">
       <img src="/assets/news2.png" alt="" class="h-32 object-cover">
-      <div class="lg:ml-6">
+      <div class="lg:ml-6 mt-4 lg:mt-0">
         <a href="" class="hover:underline text-lg font-semibold text-gray-700">あなたのペースで恋できる。マイペースに、マイペアーズ。</a>
         <p class="mt-2 text-sm">恋のペースなんて、人それぞれ。じっと待つ人もいれば、どんどん探しにいく人もいるし、ゆっく...</p>
         <div class="mt-2 flex justify-between">
@@ -289,7 +293,7 @@
     </div>
     <div class="flex lg:flex-row flex-col justify-center">
       <img src="/assets/news3.png" alt="" class="h-32 object-cover">
-      <div class="lg:ml-6">
+      <div class="lg:ml-6 lg:mt-0 mt-4">
         <a href="" class="hover:underline text-lg font-semibold text-gray-700">Twitter × Pairs、総額100万円分のクリスマスプレゼント！フォロー&リツイートで、あな...</a>
         <p class="mt-2 text-sm">2020年12月11日より、「Twitterクリスマスボックスキャンペーン2020」にPairsが参加します。本キ...</p>
         <div class="mt-2 flex justify-between">
@@ -300,7 +304,7 @@
     </div>
     <div class="flex lg:flex-row flex-col justify-center">
       <img src="/assets/news4.jpg" alt="" class="h-32 object-cover">
-      <div class="lg:ml-6">
+      <div class="lg:ml-6 lg:mt-0 mt-4">
         <a href="" class="hover:underline text-lg font-semibold text-gray-700">【解説記事】『コミュニティにいいね！』機能を使ってみよう！</a>
         <p class="mt-2 text-sm">こんにちは、ペアーズ編集部です。ペアーズに新しく『コミュニティにいいね！』機能がリリースさ...</p>
         <div class="mt-2 flex justify-between">
@@ -311,7 +315,7 @@
     </div>
     <div class="flex lg:flex-row flex-col justify-center">
       <img src="/assets/news5.png" alt="" class="h-32 object-cover">
-      <div class="lg:ml-6">
+      <div class="lg:ml-6 lg:mt-0 mt-4">
         <a href="" class="hover:underline text-lg font-semibold text-gray-700">イメージコンサルタント監修！ビデオデートマニュアル 「実践編」</a>
         <p class="mt-2 text-sm">こんにちは！ペアーズ編集部です。ペアーズの『ビデオデート』機能、もう使ってみましたか？...</p>
         <div class="mt-2 flex justify-between">
@@ -321,7 +325,7 @@
       </div>
     </div>
   </div>
-  <div class="flex justify-center items-center mt-4">
+  <div class="flex justify-center items-center mt-8">
     <a href="https://www.pairs.lv/pairs_column/" class="rounded-md border border-pairs px-10 py-4 text-pairs">もっと読む</a>
   </div>
 </section>
